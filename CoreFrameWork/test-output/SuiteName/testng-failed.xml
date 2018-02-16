@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]" parallel="tests">
+  <test name="TestC(failed)" parallel="tests">
+    <classes>
+      <class name="com.android.testcases.TestC">
+        <methods>
+          <include name="TestC" invocation-numbers="1 3"/>
+        </methods>
+      </class> <!-- com.android.testcases.TestC -->
+      <class name="com.android.testcases.TestA">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.android.testcases.TestA -->
+    </classes>
+  </test> <!-- TestC(failed) -->
+  <test name="TestA(failed)" parallel="tests">
+    <classes>
+      <class name="com.android.testcases.TestA">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="TestA1"/>
+          <include name="TestA3"/>
+        </methods>
+      </class> <!-- com.android.testcases.TestA -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

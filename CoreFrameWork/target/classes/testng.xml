@@ -1,0 +1,23 @@
+<suite name="SuiteName" parallel="tests">
+	
+	
+	<test name="TestA" >
+		<classes>
+			<class name="com.android.testcases.TestA"/>
+		</classes>
+	</test>
+	
+	<test name="TestB" >
+		<classes>
+			<class name="com.android.testcases.TestB"/>
+		</classes>
+	</test>
+	
+	<test name="TestC" >
+		<classes>
+			<class name="com.android.testcases.TestC"/>
+		</classes>
+	</test>
+	
+</suite>
+
